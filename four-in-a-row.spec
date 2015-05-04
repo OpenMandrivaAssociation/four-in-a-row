@@ -1,8 +1,8 @@
 %define url_ver	%(echo %{version}|cut -d. -f1,2)
 
 Name:		four-in-a-row
-Version:	3.14.2
-Release:	%mkrel 2
+{Version:	}3.16.1
+Release:	1
 Summary:	GNOME Four-in-a-row game
 License:	GPLv2+ and GFDL
 Group:		Games/Boards
@@ -28,7 +28,7 @@ of his or her own.
 %setup -q
 
 %build
-%configure2_5x
+%configure
 %make
 
 %install
