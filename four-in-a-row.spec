@@ -34,7 +34,7 @@ of his or her own.
 %install
 %makeinstall_std
 
-%find_lang %{name} --all-name --with-gnome --with-help
+%find_lang %{name} --all-name --with-gnome 
 
 %files -f %{name}.lang
 %license COPYING
