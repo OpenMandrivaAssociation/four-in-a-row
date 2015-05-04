@@ -37,7 +37,7 @@ of his or her own.
 %find_lang %{name} --all-name --with-gnome 
 
 %files -f %{name}.lang
-%license COPYING
+%doc COPYING
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/%{name}
