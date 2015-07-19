@@ -2,7 +2,7 @@
 
 Name:		four-in-a-row
 Version:	3.16.1
-Release:	1
+Release:	2
 Summary:	GNOME Four-in-a-row game
 License:	GPLv2+ and GFDL
 Group:		Games/Boards
