@@ -1,8 +1,9 @@
 %define url_ver	%(echo %{version}|cut -d. -f1,2)
+%define _disable_rebuild_configure 1
 
 Name:		four-in-a-row
-Version:	3.16.1
-Release:	3
+Version:	3.18.1
+Release:	1
 Summary:	GNOME Four-in-a-row game
 License:	GPLv2+ and GFDL
 Group:		Games/Boards
@@ -42,7 +43,7 @@ of his or her own.
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/%{name}
 %{_datadir}/glib-2.0/schemas/org.gnome.%{name}.gschema.xml
-%{_iconsdir}/*/*/apps/%{name}.*
+%{_iconsdir}/*/*/apps/%{name}*.*
 %{_mandir}/man6/%{name}.6*
 %{_datadir}/appdata/%{name}.appdata.xml
 

@@ -1,4 +1,5 @@
 removed_sources:
   four-in-a-row-3.14.2.tar.xz: a07083cb4395cd1c388cbd39439eb066fa530fc8
-sources:
   four-in-a-row-3.16.1.tar.xz: f22ef1a89e02d3266540fafa5b85d41255705444
+sources:
+  four-in-a-row-3.18.1.tar.xz: c4d162c73a940f59b78df80d0b63da905e81a21c
