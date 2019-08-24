@@ -13,6 +13,7 @@ BuildRequires:	pkgconfig(gtk+-3.0) >= 3.4.0
 BuildRequires:	pkgconfig(libcanberra-gtk3) >= 0.26
 BuildRequires:	pkgconfig(librsvg-2.0) >= 2.32.0
 BuildRequires:	pkgconfig(zlib)
+BuildRequires:  appstream-util
 BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	libxml2-utils
