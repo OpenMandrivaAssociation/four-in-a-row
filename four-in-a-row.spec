@@ -17,7 +17,11 @@ BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	libxml2-utils
 BuildRequires:	meson
-#BuildRequires:	pkgconfig(vapigen)
+BuildRequires:  vala
+BuildRequires:  vala-tools
+BuildRequires:	pkgconfig(vapigen)
+BuildRequires:  pkgconfig(gobject-introspection-1.0)
+BuildRequires:  gobject-introspection
 BuildRequires:	pkgconfig(gsound)
 Obsoletes:	gnect
 # For help
