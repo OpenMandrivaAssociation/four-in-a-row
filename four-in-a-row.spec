@@ -2,7 +2,7 @@
 %define _disable_rebuild_configure 1
 
 Name:		four-in-a-row
-Version:	3.28.0
+Version:	3.32.0
 Release:	1
 Summary:	GNOME Four-in-a-row game
 License:	GPLv2+ and GFDL
@@ -16,6 +16,9 @@ BuildRequires:	pkgconfig(zlib)
 BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	libxml2-utils
+BuildRequires:	meson
+BuildRequires:	pkgconfig(vapigen)
+BuildRequires:	pkgconfig(gsound)
 Obsoletes:	gnect
 # For help
 Requires:	yelp
@@ -29,21 +32,20 @@ of his or her own.
 %setup -q
 
 %build
-%configure
-%make
+%meson
+%meson_build
 
 %install
-%makeinstall_std
+%meson_install
 
 %find_lang %{name} --all-name --with-gnome
 
 %files -f %{name}.lang
-%doc COPYING
+%license COPYING
 %{_bindir}/%{name}
-%{_datadir}/applications/%{name}.desktop
+%{_datadir}/applications/org.gnome.Four-in-a-row.desktop
 %{_datadir}/%{name}
-%{_datadir}/glib-2.0/schemas/org.gnome.%{name}.gschema.xml
-%{_iconsdir}/*/*/apps/%{name}*.*
+%{_datadir}/glib-2.0/schemas/org.gnome.Four-in-a-row.gschema.xml
+%{_iconsdir}/*/*/apps/org.gnome.Four-in-a-row*.*
 %{_mandir}/man6/%{name}.6*
-%{_datadir}/metainfo/%{name}.appdata.xml
-
+%{_datadir}/metainfo/org.gnome.Four-in-a-row.appdata.xml
