@@ -24,6 +24,7 @@ BuildRequires:	pkgconfig(vapigen)
 BuildRequires:  pkgconfig(gobject-introspection-1.0)
 BuildRequires:  gobject-introspection
 BuildRequires:	pkgconfig(gsound)
+BuildRequires:  librsvg-vala-devel
 Obsoletes:	gnect
 # For help
 Requires:	yelp
