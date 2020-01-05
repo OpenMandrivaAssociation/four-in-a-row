@@ -2,7 +2,7 @@
 %define _disable_rebuild_configure 1
 
 Name:		four-in-a-row
-Version:	3.32.0
+Version:	3.34.1
 Release:	1
 Summary:	GNOME Four-in-a-row game
 License:	GPLv2+ and GFDL
@@ -24,6 +24,7 @@ BuildRequires:	pkgconfig(vapigen)
 BuildRequires:  pkgconfig(gobject-introspection-1.0)
 BuildRequires:  gobject-introspection
 BuildRequires:	pkgconfig(gsound)
+BuildRequires:  librsvg-vala-devel
 Obsoletes:	gnect
 # For help
 Requires:	yelp
