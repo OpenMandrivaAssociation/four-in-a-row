@@ -55,3 +55,4 @@ of his or her own.
 %{_iconsdir}/*/*/apps/org.gnome.Four-in-a-row*.*
 %{_mandir}/man6/%{name}.6*
 %{_datadir}/metainfo/org.gnome.Four-in-a-row.appdata.xml
+%{_datadir}/dbus-1/services/org.gnome.Four-in-a-row.service
