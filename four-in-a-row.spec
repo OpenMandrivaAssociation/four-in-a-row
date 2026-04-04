@@ -5,7 +5,7 @@
 
 Name:		four-in-a-row
 Version:	3.38.1
-Release:	7
+Release:	8
 Summary:	GNOME Four-in-a-row game
 License:	GPLv2+ and GFDL
 Group:		Games/Boards
@@ -18,7 +18,7 @@ BuildRequires:	pkgconfig(zlib)
 BuildRequires:  appstream-util
 BuildRequires:	intltool
 BuildRequires:	itstool
-BuildRequires:	libxml2-utils
+BuildRequires:	libxml2-utils >= 2.15.2
 BuildRequires:	meson
 BuildRequires:  vala
 BuildRequires:  vala-tools
